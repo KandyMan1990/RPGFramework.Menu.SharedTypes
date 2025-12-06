@@ -1,0 +1,16 @@
+{
+  "name": "com.rpgframework.menu.sharedtypes",
+  "version": "0.1.0",
+  "displayName": "RPG Framework Menu Shared Types",
+  "description": "Shared types for the Menu RPGFramework package, other modules should reference these when necessary",
+  "unity": "6000.0",
+  "keywords": [
+    "RPG Framework",
+    "Menu",
+	"Shared Types"
+  ],
+  "author": {
+    "name": "Elliott Armstrong",
+    "url": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes"
+  }
+}

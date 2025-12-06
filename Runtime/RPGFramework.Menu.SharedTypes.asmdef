@@ -1,0 +1,16 @@
+{
+    "name": "RPGFramework.Menu.SharedTypes",
+    "rootNamespace": "RPGFramework.Menu.SharedTypes",
+    "references": [
+        "GUID:15a54f1e5c2c23f419438b5c6d8a3a43"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
