@@ -9,14 +9,9 @@ namespace RPGFramework.Menu.SharedTypes
         Type MenuType { get; }
     }
     
-    public readonly struct MenuModuleArgs : IMenuModuleArgs
+    public readonly struct MenuModuleArgs<TMenu> : IMenuModuleArgs
     {
-        public Type MenuType { get; }
-
-        public MenuModuleArgs(Type menuType)
-        {
-            MenuType = menuType;
-        }
+        public Type MenuType => typeof(TMenu);
     }
     
     public interface IMenuModule : IModule
