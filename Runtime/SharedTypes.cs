@@ -18,8 +18,6 @@ namespace RPGFramework.Menu.SharedTypes
     {
         Task PushMenu(IMenuModuleArgs menuModuleArgs);
         Task PopMenu();
-        void PlaySfx(int id);
-        Task ReturnToPreviousModuleAsync();
         bool IsMenuInStack<T>();
     }
 }
