@@ -4,7 +4,7 @@ using RPGFramework.Core.SharedTypes;
 
 namespace RPGFramework.Menu.SharedTypes
 {
-    public enum MenuType
+    public enum MenuType : byte
     {
         Inventory,
         Abilities,
@@ -16,6 +16,7 @@ namespace RPGFramework.Menu.SharedTypes
     public interface IMenuTypeProvider
     {
         Type GetType(MenuType type);
+        Type GetType(byte type);
     }
     
     public interface IMenuModuleArgs : IModuleArgs
