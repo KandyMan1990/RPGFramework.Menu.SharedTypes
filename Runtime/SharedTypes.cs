@@ -1,4 +1,3 @@
-using System;
 using System.Threading.Tasks;
 using RPGFramework.Core.SharedTypes;
 
@@ -6,42 +5,18 @@ namespace RPGFramework.Menu.SharedTypes
 {
     public enum MenuType : byte
     {
+        Begin,
         Inventory,
         Abilities,
         CharacterInfo,
         Config,
-        Save
-    }
-    
-    public interface IMenuTypeProvider
-    {
-        Type GetType(MenuType type);
-        Type GetType(byte type);
-    }
-    
-    public interface IMenuModuleArgs : IModuleArgs
-    {
-        Type MenuType { get; }
-    }
-
-    public readonly struct GenericMenuModuleArgs<TMenu> : IMenuModuleArgs
-    {
-        public Type MenuType => typeof(TMenu);
-    }
-
-    public readonly struct MenuModuleArgs : IMenuModuleArgs
-    {
-        public Type MenuType { get; }
-
-        public MenuModuleArgs(Type menuType)
-        {
-            MenuType = menuType;
-        }
+        Save,
+        Language
     }
 
     public interface IMenuModule : IModule
     {
-        Task PushMenu(IMenuModuleArgs menuModuleArgs);
+        Task PushMenu(MenuType menuType);
         Task PopMenu();
         bool IsMenuInStack<T>();
     }
