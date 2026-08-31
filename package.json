@@ -7,10 +7,13 @@
   "keywords": [
     "RPG Framework",
     "Menu",
-	"Shared Types"
+    "Shared Types"
   ],
   "author": {
     "name": "Elliott Armstrong",
     "url": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes"
+  },
+  "dependencies": {
+    "com.rpgframework.core.sharedtypes": "0.2.0"
   }
 }
