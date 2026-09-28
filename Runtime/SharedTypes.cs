@@ -11,7 +11,9 @@ namespace RPGFramework.Menu.SharedTypes
         CharacterInfo,
         Config,
         Save,
-        Language
+        Language,
+        Party,
+        Load
     }
 
     public interface IMenuModule : IModule
