@@ -1,9 +1,9 @@
 {
   "name": "com.rpgframework.menu.sharedtypes",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "displayName": "RPG Framework Menu Shared Types",
   "description": "Shared types for the Menu RPGFramework package, other modules should reference these when necessary",
-  "unity": "6000.0",
+  "unity": "6000.6",
   "keywords": [
     "RPG Framework",
     "Menu",
@@ -14,6 +14,6 @@
     "url": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes"
   },
   "dependencies": {
-    "com.rpgframework.core.sharedtypes": "0.2.0"
+    "com.rpgframework.core.sharedtypes": "0.3.0"
   }
 }
