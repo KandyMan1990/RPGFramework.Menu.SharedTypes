@@ -11,7 +11,8 @@ Requires Unity 6000.6 or newer and RPGFramework.Core.SharedTypes.
 - **`MenuConstants.MODULE_ID`**: its module id, 1.
 - **`MenuType`**: which menu to open: `Begin`, `Config`, `Language`, `Party`, `Save` and `Load` are built; `Inventory`,
   `Abilities` and `CharacterInfo` are reserved and not yet built.
-- **`MenuArgs`** and **`IMenuArgsStore`**: the menu to open on entering the menu module, set by whatever opens it.
+- **`MenuArgs`** and **`IMenuArgsStore`**: the menu to open on entering the menu module, set by whatever opens it. Your
+  global installer binds the store to the Menu package's `MenuArgsStore`.
 
 ```csharp
 menuArgsStore.Set(new MenuArgs((byte)MenuType.Party));
