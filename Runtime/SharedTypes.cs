@@ -23,7 +23,8 @@ namespace RPGFramework.Menu.SharedTypes
         bool IsMenuInStack<T>();
 
         /// <summary>
-        /// Asks the menu module to leave for the module named by <c>IChangeModuleStore</c>.
+        /// Asks the menu module to leave with <paramref name="outcome" />, one of <c>MenuOutcomes</c>, for the game's
+        /// module router to route.
         /// </summary>
         /// <remarks>
         /// Call this instead of requesting the change directly. A menu that requests one while it is still
@@ -31,6 +32,6 @@ namespace RPGFramework.Menu.SharedTypes
         /// localisation sheets unloaded and then reloaded over the incoming module's. The menu module holds
         /// the request until the menu has finished coming back up, then acts on it.
         /// </remarks>
-        void RequestModuleChange();
+        void RequestModuleChange(byte outcome);
     }
 }
