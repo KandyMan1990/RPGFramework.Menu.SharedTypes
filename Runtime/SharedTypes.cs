@@ -16,10 +16,21 @@ namespace RPGFramework.Menu.SharedTypes
         Load
     }
 
+    /// <summary>
+    /// The menu module, as Core resolves it: a stack of menus, the top one shown and taking input, faded between as
+    /// each opens and closes.
+    /// </summary>
     public interface IMenuModule : IModule
     {
+        /// <summary>Opens a menu over the one on top, which is suspended under it.</summary>
         Task PushMenu(MenuType menuType);
+
+        /// <summary>
+        /// Closes the menu on top and resumes the one under it; closing the last leaves the menu module.
+        /// </summary>
         Task PopMenu();
+
+        /// <summary>Whether a menu of this type is open anywhere in the stack.</summary>
         bool IsMenuInStack<T>();
 
         /// <summary>
