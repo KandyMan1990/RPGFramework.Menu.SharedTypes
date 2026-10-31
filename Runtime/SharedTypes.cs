@@ -30,9 +30,6 @@ namespace RPGFramework.Menu.SharedTypes
         /// </summary>
         Task PopMenu();
 
-        /// <summary>Whether a menu of this type is open anywhere in the stack.</summary>
-        bool IsMenuInStack<T>();
-
         /// <summary>
         /// Asks the menu module to leave with <paramref name="outcome" />, one of <c>MenuOutcomes</c>, for the game's
         /// module router to route.

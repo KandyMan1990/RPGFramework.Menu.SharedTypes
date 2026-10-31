@@ -4,10 +4,10 @@ What other modules need to open the menus, without depending on the Menu package
 
 Requires Unity 6000.6 or newer and RPGFramework.Core.SharedTypes.
 
-- **`IMenuModule`**: the menu module, which keeps a stack of open menus. `PushMenu` opens one over the current one,
-  `PopMenu` closes it, and `IsMenuInStack<T>` says whether one is open. A menu that wants to leave for another module
-  calls `RequestModuleChange` with one of `MenuOutcomes` rather than asking Core directly, so the menu module can finish
-  bringing the menus back up before it goes.
+- **`IMenuModule`**: the menu module, which keeps a stack of open menus. `PushMenu` opens one over the current one, and
+  `PopMenu` closes it. A menu that wants to leave for another module calls `RequestModuleChange` with one of
+  `MenuOutcomes` rather than asking Core directly, so the menu module can finish bringing the menus back up before it
+  goes.
 - **`MenuConstants.MODULE_ID`**: its module id, 1.
 - **`MenuOutcomes`**: what the menu tells Core as its last menu closes, for the game's module router: `CLOSED`, back
   to what it opened over, or `PLAYTHROUGH`, a game begun or loaded.
