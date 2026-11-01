@@ -6,9 +6,6 @@ namespace RPGFramework.Menu.SharedTypes
     public enum MenuType : byte
     {
         Begin,
-        Inventory,
-        Abilities,
-        CharacterInfo,
         Config,
         Save,
         Language,
