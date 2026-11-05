@@ -3,25 +3,17 @@ using RPGFramework.Core.SharedTypes;
 
 namespace RPGFramework.Menu.SharedTypes
 {
-    public enum MenuType : byte
-    {
-        Begin,
-        Config,
-        Save,
-        Language,
-        Party,
-        Load,
-        Controls
-    }
-
     /// <summary>
     /// The menu module, as Core resolves it: a stack of menus, the top one shown and taking input, faded between as
     /// each opens and closes.
     /// </summary>
     public interface IMenuModule : IModule
     {
-        /// <summary>Opens a menu over the one on top, which is suspended under it.</summary>
-        Task PushMenu(MenuType menuType);
+        /// <summary>
+        /// Opens the menu named by <paramref name="menuId" />, the hash of its name — one of <c>MenuIds</c>, or a game's
+        /// own — over the one on top, which is suspended under it.
+        /// </summary>
+        Task PushMenu(ulong menuId);
 
         /// <summary>
         /// Closes the menu on top and resumes the one under it; closing the last leaves the menu module.

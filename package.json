@@ -14,6 +14,7 @@
     "url": "https://github.com/KandyMan1990/RPGFramework.Menu.SharedTypes"
   },
   "dependencies": {
-    "com.rpgframework.core.sharedtypes": "0.3.0"
+    "com.rpgframework.core.sharedtypes": "0.3.0",
+    "com.rpgframework.hashing": "2.0.2"
   }
 }

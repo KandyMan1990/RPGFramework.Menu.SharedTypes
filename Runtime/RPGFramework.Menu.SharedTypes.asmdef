@@ -2,7 +2,8 @@
     "name": "RPGFramework.Menu.SharedTypes",
     "rootNamespace": "RPGFramework.Menu.SharedTypes",
     "references": [
-        "RPGFramework.Core.SharedTypes"
+        "RPGFramework.Core.SharedTypes",
+        "RPGFramework.Hashing"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
