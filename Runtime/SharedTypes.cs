@@ -10,7 +10,8 @@ namespace RPGFramework.Menu.SharedTypes
         Save,
         Language,
         Party,
-        Load
+        Load,
+        Controls
     }
 
     /// <summary>
