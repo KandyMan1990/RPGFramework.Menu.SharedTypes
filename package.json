@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "com.rpgframework.core.sharedtypes": "0.3.0",
-    "com.rpgframework.hashing": "2.0.2"
+    "com.rpgframework.hashing": "3.0.0"
   }
 }
