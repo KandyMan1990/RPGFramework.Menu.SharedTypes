@@ -2,7 +2,7 @@
 
 What other modules need to open the menus, without depending on the Menu package itself.
 
-Requires Unity 6000.6 or newer, RPGFramework.Core.SharedTypes and RPGFramework.Hashing.
+Requires Unity 6000.7 or newer, RPGFramework.Core.SharedTypes and RPGFramework.Hashing.
 
 - **`IMenuModule`**: the menu module, which keeps a stack of open menus. `PushMenu` opens one over the current one, by
   its id, and `PopMenu` closes it. A menu that wants to leave for another module calls `RequestModuleChange` with one of

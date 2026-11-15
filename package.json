@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "displayName": "RPG Framework Menu Shared Types",
   "description": "Shared types for the Menu RPGFramework package, other modules should reference these when necessary",
-  "unity": "6000.6",
+  "unity": "6000.7",
   "keywords": [
     "RPG Framework",
     "Menu",
